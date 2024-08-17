@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-like Navigation</title>
+    <link rel="stylesheet" href="voiceplayer.css">
+</head>
+<body>
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="manga.html">Manga</a></li>
+            <li><a href="voicebooks.html">Voicebooks</a></li>
+            <li><a href="subscription.html">Subscription</a></li>
+            <li><a class="active" href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="voicebook-container">
+        <div class="voicebook" data-audio="audio1.mp3">Voicebook 1</div>
+        <div class="voicebook" data-audio="audio2.mp3">Voicebook 2</div>
+        <div class="voicebook" data-audio="audio3.mp3">Voicebook 3</div>
+    </div>
+
+    <div id="audioPlayerContainer" class="audio-player-container" style="display:none;">
+        <audio id="audioPlayer" controls>
+            <source id="audioSource" src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="playPauseButton">Pause</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
